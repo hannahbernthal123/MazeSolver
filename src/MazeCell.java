@@ -1,3 +1,5 @@
+// Hannah Bernthal - 2026
+
 /**
  * A class that represents a single cell of the maze.
  * @author Ms. Namasivayam

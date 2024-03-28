@@ -1,3 +1,5 @@
+// Hannah Bernthal - 2026
+
 /**
  * A class to test our MazeSolver
  * @author: Nandhini Namasivayam

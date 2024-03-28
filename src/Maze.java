@@ -1,3 +1,5 @@
+// Hannah Bernthal - 2026
+
 /**
  * Creates a Maze made up of MazeCells
  * @author Ms. Namasivayam
@@ -146,7 +148,22 @@ public class Maze {
      * @return boolean true/false
      */
     public boolean isValidCell(int row, int col) {
-        // TODO: Complete this function
+        // Checks if it is a valid cell by checking if it...
+        // 1) Is in bounds
+        // 2) Is a wall
+        // 3) Has been explored
+        if (col < 0 || col >= mazeGrid[0].length) {
+            return false;
+        }
+        else if (row < 0 || row >= mazeGrid.length) {
+            return false;
+        }
+        else if (mazeGrid[row][col].isWall()) {
+            return false;
+        }
+        else if (mazeGrid[row][col].isExplored()) {
+            return false;
+        }
         return true;
     }
 }
